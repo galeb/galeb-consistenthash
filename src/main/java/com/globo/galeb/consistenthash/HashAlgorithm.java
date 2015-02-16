@@ -71,6 +71,10 @@ public class HashAlgorithm {
         }
     }
 
+    public static HashType hashTypeFromString(String hashTypeStr) {
+        return HASH_TYPE_MAP.get(hashTypeStr);
+    }
+
     /** The hash type. */
     private final HashType hashType;
 
